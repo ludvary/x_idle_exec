@@ -4,7 +4,7 @@ A tiny X11 daemon that runs a command after the system has been idle for a speci
 
 It uses `XScreenSaverQueryInfo` to query the current idle time, so it doesn't rely on any external tools.
 
-I was having issues with `xautolock`, so I began looking through its source code to understand how it detected idle time. After discovering `XScreenSaverQueryInfo`, I realized the core functionality I needed was simple enough to implement in a couple hundred lines of C++ so I wrote this instead.
+I was having issues with `xautolock`, so I began looking through its source code to understand how it detected idle time. After discovering `XScreenSaverQueryInfo`, I realized the core functionality I needed was simple enough to implement in like 50 lines of C++ so I wrote this instead.
 
 This isn't intended to replace mature projects like `xautolock`; it's just a minimal daemon that does exactly what I need.
 
