@@ -6,12 +6,7 @@ It uses `XScreenSaverQueryInfo` to query the current idle time, so it doesn't re
 
 I was having issues with `xautolock`, so I began looking through its source code to understand how it detected idle time. After discovering `XScreenSaverQueryInfo`, I realized the core functionality I needed was simple enough to implement in like 50 lines of C++ so I wrote this instead.
 
-This isn't intended to replace mature projects like `xautolock`; it's just a minimal daemon that does exactly what I need.
-
-- Lightweight (single C++ source file)
-- Intended to run as a `systemd --user` service
-- Executes a command once after the idle timeout
-- X11 only
+This isn't intended to replace mature projects like `xautolock`; it's just a minimal and very lightweight daemon that does exactly what I need.
 
 ## Building
 
