@@ -1,6 +1,6 @@
 # xidle-daemon
 
-A small X11 daemon that runs a command after the system has been idle for a specified amount of time.
+A tiny X11 daemon that runs a command after the system has been idle for a specified amount of time.
 
 It uses `XScreenSaverQueryInfo` to query the current idle time, so it doesn't rely on any external tools.
 
